@@ -5,10 +5,12 @@ import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
+import ImagenCaprpetaAnual3 from "./img/Fotocarpeta3Barco.webp"
+
 const TAGS = {
   NEXT: {
-    name: "Next.js",
-    class: "bg-black text-white",
+    name: "After Effects",
+    class: "bg-[#00015a] text-white",
     icon: NextJS,
   },
   TAILWIND: {
@@ -16,24 +18,38 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  AFTEREFEECTS: {
+    name: "After Effects",
+    class: "bg-[#D291FF] text-black",
+    icon: "",
+  },
 }
 const PROJECTS = [
-  {
-    title: "SVGL - A beautiful library with SVG logos",
+{
+    title: "Motion Graphics Voces Anónimas",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Un video Motion Graphics que narra la fascinante historia de la Estancia La Aurora, combinando técnicas tradicionales de animación con imágenes originales creadas por mí e ilustraciones generadas mediante inteligencia artificial, logrando una mezcla visual única.",
+    link: "https://youtu.be/H0Bfar_mKFw",
+    image: "/projects/fotoVocesAnimacion.webp",
+    tags: [TAGS.NEXT/* , TAGS.TAILWIND */],
   },
-  {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+{
+    title: "Carpeta Anual 3",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Video recopilando brevemente trabajos de facultad del año 2023, mostrando de forma resumida algunos de los proyectos que más me gustaron, con un toque de humor.",
+    link: "https://youtu.be/JGSDgqFpfnw?si=mCrISxhvBtzUPqzD",
+    github: "",
+    image: "/projects/hola.webp",
+    tags: [TAGS.NEXT],
+  },
+  
+  {
+    title: "Lyrics Video Nunca Estoy",
+    description:
+      "Un video Motion Graphics basado en la canción Nunca Estoy de C. Tangana. Es un proyecto al que le tengo un cariño especial debido al tiempo y dedicación invertidos en cada ilustración.",
+    link: "https://youtu.be/0iQ_QL0pFG8?si=JWQxCJYdbx2dfVN9",
+    image: "/projects/introImagenNuncaEstoy2.webp",
+    tags: [TAGS.NEXT],
   },
 ]
 ---
